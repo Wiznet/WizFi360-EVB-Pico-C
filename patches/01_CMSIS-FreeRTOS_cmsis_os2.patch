@@ -1,0 +1,22 @@
+diff --git a/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c b/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c
+index 445cd309..0f10f80e 100644
+--- a/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c
++++ b/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c
+@@ -2784,10 +2784,13 @@ static void *AllocBlock (MemPool_t *mp) {
+ 
+   if (mp->head != NULL) {
+     /* List of free block exists, get head block */
+-    p = mp->head;
+-
+-    /* Head block is now next on the list */
+-    mp->head = p->next;
++    if ((SRAM_BASE <= mp->head) && (SRAM_END >= mp->head))   //WIZnet temporary code
++    {
++      p = mp->head;
++      
++      /* Head block is now next on the list */
++      mp->head = p->next;
++    }
+   }
+ 
+   return (p);
