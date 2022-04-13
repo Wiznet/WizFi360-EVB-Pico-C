@@ -1,3 +1,6 @@
 [submodule "libraries/CMSIS_5"]
 	path = libraries/CMSIS_5
 	url = https://github.com/ARM-software/CMSIS_5.git
+[submodule "libraries/CMSIS-Driver"]
+	path = libraries/CMSIS-Driver
+	url = https://github.com/ARM-software/CMSIS-Driver.git
