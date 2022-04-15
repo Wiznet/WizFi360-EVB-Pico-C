@@ -93,7 +93,7 @@ execute_process(COMMAND ${GIT_EXECUTABLE} -C ${PICO_SDK_SRC_DIR} submodule updat
 message("submodules CMSIS-FreeRTOS initialised")
  
 file(GLOB CMSIS_FREERTOS_PATCHES
-	"${RP2040_HAT_FREERTOS_C_PATCH_DIR}/01_CMSIS-FreeRTOS_cmsis_os2.patch"
+	"${WIZFI360_EVB_PICO_C_PATCH_DIR}/01_CMSIS-FreeRTOS_cmsis_os2.patch"
 	)
 
 foreach(CMSIS_FREERTOS_PATCHES IN LISTS CMSIS_FREERTOS_PATCHES)
