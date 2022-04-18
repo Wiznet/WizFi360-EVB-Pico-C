@@ -34,7 +34,7 @@ The WizFi360-EVB-Pico-C examples use **Raspberry Pi Pico** and **WizFi360-EVB** 
 
 - [**WizFi360-EVB-Pico**][link-wizfi360-evb-pico]
 
-![][link-wzfi360-evb-pico_main]
+![][link-wizfi360-evb-pico_main]
 
 
 
