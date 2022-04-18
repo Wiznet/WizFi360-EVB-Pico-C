@@ -30,7 +30,7 @@
 #define ETHERNET_BUF_MAX_SIZE (1024 * 2)
 
 /* SSL */
-#define TARGET_PORT 6000
+#define TARGET_PORT 443
 #define RECV_TIMEOUT (10 * 1000)
 
 /**

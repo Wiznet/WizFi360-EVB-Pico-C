@@ -4,12 +4,10 @@
 
 ## Step 1: Prepare software
 
-The following serial terminal programs are required for Loopback example test, download and install from below links.
+The following serial terminal programs are required for TCP_Client_Demo example test, download and install from below links.
 
 - [**Tera Term**][link-tera_term]
 - [**Hercules**][link-hercules]
-
-
 
 ## Step 2: Prepare hardware
 
@@ -21,10 +19,10 @@ To test the TCP_Client_Demo example, minor settings shall be done in code.
 
 1. Setup SSID information in 'socket_startup.c' in 'WizFi360-EVB-Pico-C/examples/TCP_Client_Demo/' directory.
 
-Setup the SPI interface you use.
+Setup the SSID infomation.
 
 ```cpp
-/* SPI */
+/* SSID */
 #define SSID            ""
 #define PASSWORD        ""
 ```
@@ -74,4 +72,4 @@ Link
 
 [link-hercules_tcp_server_setting]: https://github.com/Wiznet/WizFi360-EVB-Pico-C/blob/main/static/images/TCP_Client_Demo/hercules_tcp_server_setting.png
 
-[link-hercules_tcp_server_result]: https://github.com/Wiznet/WizFi360-EVB-Pico-C/blob/main/static/images/TCP_Client_Demo/hercules_tcp_server_result.png
+[link-hercules_tcp_server_result]: https://github.com/Wiznet/WizFi360-EVB-Pico-C/blob/main/static/images/TCP_Client_Demo/hercules_tcp_server_result.png                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
