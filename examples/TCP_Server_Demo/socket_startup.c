@@ -22,11 +22,9 @@
 
 #include "Driver_WiFi.h"
 
-#define SSID            "DIR-815_Wiznet"
-#define PASSWORD        "wiznet1206"
+#define SSID            ""
+#define PASSWORD        ""
 
-//#define SSID            "Hoon_2.4G"
-//#define PASSWORD        "12345!67891"
 #define SECURITY_TYPE   ARM_WIFI_SECURITY_WPA2
 
 extern ARM_DRIVER_WIFI Driver_WiFi1;
