@@ -50,7 +50,6 @@ int main (void)
   SystemCoreClockUpdate();
   stdio_init_all();
 
-  printf("Hello World\r\n");
   osKernelInitialize();                         // Initialize CMSIS-RTOS
   app_initialize();                             // Initialize application
   osKernelStart();                              // Start thread execution
