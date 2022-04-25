@@ -12,7 +12,7 @@ include(pico_sdk_import.cmake)
 include(wizfi360_evb_pico_c_sdk_version.cmake)
 
 # Set project name
-set(PROJECT_NAME WIZFI360-EVB-PICO-C)
+set(PROJECT_NAME WizFi360-EVB-Pico-C)
 
 # Set project informations
 project(${PROJECT_NAME} C CXX ASM)
