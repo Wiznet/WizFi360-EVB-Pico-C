@@ -93,13 +93,13 @@ execute_process(COMMAND ${GIT_EXECUTABLE} -C ${PICO_SDK_SRC_DIR} submodule updat
 message("submodules CMSIS-FreeRTOS initialised")
  
 file(GLOB CMSIS_FREERTOS_PATCHES
-	"${WIZFI360_EVB_PICO_C_PATCH_DIR}/01_CMSIS-FreeRTOS_cmsis_os2.patch"
+	"${WIZFI360_EVB_PICO_C_PATCH_DIR}/01_cmsis_freertos_cmsis_os2.patch"
 	)
 
-foreach(CMSIS_FREERTOS_PATCHES IN LISTS CMSIS_FREERTOS_PATCHES)
-	message("Running patch ${CMSIS_FREERTOS_PATCHES}")
+foreach(CMSIS_FREERTOS_PATCH IN LISTS CMSIS_FREERTOS_PATCHES)
+	message("Running patch ${CMSIS_FREERTOS_PATCH}")
 	execute_process(
-		COMMAND ${GIT_EXECUTABLE} apply ${CMSIS_FREERTOS_PATCHES}
+		COMMAND ${GIT_EXECUTABLE} apply ${CMSIS_FREERTOS_PATCH}
 		WORKING_DIRECTORY ${CMSIS_FREERTOS_SRC_DIR}
 	)
 endforeach()

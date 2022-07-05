@@ -40,9 +40,6 @@ static void set_clock_khz(void);
 extern void app_initialize (void);
 extern int stdout_init (void);
 
-//uint8_t ucHeap[ configTOTAL_HEAP_SIZE ] __attribute__ ( (section( ".my_heap" ) ) );
-
-
 int main (void)
 {
   set_clock_khz();
