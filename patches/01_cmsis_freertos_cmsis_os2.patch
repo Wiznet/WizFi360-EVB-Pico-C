@@ -13,7 +13,7 @@ index 445cd309..0f10f80e 100644
 +    if ((SRAM_BASE <= mp->head) && (SRAM_END >= mp->head))   //WIZnet temporary code
 +    {
 +      p = mp->head;
-+      
++
 +      /* Head block is now next on the list */
 +      mp->head = p->next;
 +    }
